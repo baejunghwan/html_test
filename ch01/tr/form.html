@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form.html"method="post"action="list.html"enctype="multipart/form-data">
+        <table>Code<br>
+            <thead>기본정보</thead>
+            <tbody>
+                <tr><th>코드그룹<td style="color:red;">*</td></th>
+                        <td><select>
+                            <option>그룹1</option>
+                            <option>그룹2</option>
+                            </select></td></tr>
+                <tr><th>코드<td style="color:red;">*</td></th>
+                        <td><input type="text" placeholder="자동생성"></td>
+                    <th>코드(ANOTHER)<td style="color:red;">*</td></th>
+                        <td><input type="text" placeholder="영대소문자,숫자"></td>
+                    <th>코드 이름<td style="color:red;">*</td></th>
+                        <td><input type="text" placeholder="한글,영대소문자,숫자"></td>
+                    <th>코드 이름(영문)<td style="color:red;">*</td></th>
+                        <td><input type="text" placeholder="영대소문자,숫자"></td></tr>
+                <tr><th>사용여부<td style="color:red;">*</td></th>
+                        <td><select>
+                            <option>사용</option>
+                            <option>미사용</option>
+                            </select></td>
+                    <th>순서<td style="color:red;">*</td></th>
+                        <td><input type="text"></td></tr>
+                <tr><th>설명</th>
+                        <td><textarea></textarea></td></tr>
+                <tr><th>다국어1</th>
+                        <td><input type="text"></td>
+                    <th>다국어2</td></th>
+                        <td><input type="text"></td>
+                    <th>다국어3</th>
+                        <td><input type="text"></td>
+                    <th>다국어4</th>
+                        <td><input type="text"></td></tr>
+                <tr><th>다국어5</th>
+                        <td><input type="text"></td>
+                    <th>다국어6</th>
+                        <td><input type="text"></td>
+                    <th>다국어7</th>
+                        <td><input type="text"></td>
+                    <th>다국어8</th>
+                        <td><input type="text"></td></tr>
+                <tr><th>예비1 (VARCHAR TYPE)</th>
+                        <td><input type="text"></td>
+                    <th>예비2 (VARCHAR TYPE)</th>
+                        <td><input type="text"></td>
+                    <th>예비3 (VARCHAR TYPE)</th>
+                        <td><input type="text"></td>
+                    <th>예비4 (VARCHAR TYPE)</th>
+                        <td><input type="text"></td></tr>
+                <tr><th>예비1 (INT TYPE)</th>
+                        <td><input type="text"></td>
+                    <th>예비2 (INT TYPE)</th>
+                        <td><input type="text"></td>
+                    <th>예비3 (INT TYPE)</th>
+                        <td><input type="text"></td>
+                    <th>예비4 (INT TYPE)</th>
+                        <td><input type="text"></td></tr>
+                <tr><td><input type="button" action="http://127.0.0.1:5500/html_test/ch01/tr/list.html" name="1"></td>
+                    <td><input type="button" action="http://127.0.0.1:5500/html_test/ch01/tr/list.html" name="2"></th></td></tr>
+                           <!--  FOOLOW LINK는 되는데, 개발창말고 외부로 하는방법은 모르겠다.. -->
+            </tbody>
+        </table>
+    </form>
+</body></html>
