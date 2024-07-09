@@ -1,149 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>form</title>
+    <!-- bootstrap css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .form-control {
-            height: 50px;
-            width: 1500px;
-            font-size: large; font-weight: bold;
-            text-align: left;
-        }
-        .page {
-            text-emphasis-color: blue;
-        }
-        .style {
-            text-emphasis-color: red;
-        }
-        .page {
-            text-emphasis-color: blue;
-        }
-    </style>
-
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: footer; }
     
-</head>
-<body>
-  <div class="container-fluid">
-  <div class="page"><p>page 1 > page 2 > Default</p></div>
-    <h1>Code</h1></p></div>
-        <a href=""></a>
-         <table>
-            <thead></thead>
-            <tbody>
-                <tr>
-                    <input class="form-control" type="text" value="기본정보" aria-label="Disabled input example" disabled readonly></tr>
-<!-- 이 부분 table이 아니라 row col 쓰기 -->
-                    <table>
-                    <tr>
-                    <th>코드그룹</th><div style="*">*</div>
-                        <td></td></tr>
-                <tr>
-                    <th>코드</th>
-                        <td>자동생성</td>
-                    <th>코드 (ANOTHER)</th>
-                        <td>영대소문자,숫자</td>
-                    <th>코드 이름</th>
-                        <td>한글,영대소문자,숫자</td>
-                    <th>코드 이름(영문)</th>
-                        <td>영대소문자,숫자</td></tr>
-                <tr>
-                    <th>사용여부</th>
-                        <td>사용</td>
-                    <th>순서</th>
-                        <td></td></tr>
-                <tr>
-                    <th>설명</th>
-                        <td><textarea></textarea></td>
-                <tr>
-                    <th>다국어1</th>
-                        <td></td>
-                        <th>다국어2</th>
-                        <td></td>
-                        <th>다국어3</th>
-                        <td></td>
-                        <th>다국어4</th>
-                        <td></td>
-                <tr>
-                    <th>다국어5</th>
-                        <td></td>
-                        <th>다국어6</th>
-                        <td></td>
-                        <th>다국어7</th>
-                        <td></td>
-                        <th>다국어8</th>
-                        <td></td></tr>
-                <tr>
-                    <th>예비1 (VARCHAR TYPE)</th>
-                        <td></td>
-                        <th>예비2 (VARCHAR TYPE)</th>
-                        <td></td>
-                        <th>예비3 (VARCHAR TYPE)</th>
-                        <td></td>
-                        <th>예비4 (VARCHAR TYPE)</th>
-                        <td></td></tr>
-                <tr>
-                    <th>예비1 (INT TYPE)</th>
-                        <td></td>
-                        <th>예비2 (INT TYPE)</th>
-                        <td></td>
-                        <th>예비3 (INT TYPE)</th>
-                        <td></td>
-                        <th>예비4 (INT TYPE)</th>
-                        <td></td></tr></table></tbody>
+    .gird-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'footer footer footer footer footer footer';
+      gap: 10px;
+      padding: 10px;
+    }
 
-                        <nav class="navbar bg-body-tertiary fixed-top">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" href="#">Offcanvas navbar</a>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                                <div class="offcanvas-header">
-                                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
-                                      </a>
-                                      <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                          <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                      </ul>
-                                    </li>
-                                  </ul>
-                                  <form class="d-flex mt-3" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </nav>
-            
-                        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                            <a class="navbar-brand" href="#">Offcanvas navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                              ...
-                            </div>
-                          </nav>
-                        </tbody>
-</body>
+    .gird-container > div {
+      text-align: left;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="item1">Header</div>
+        <div class="item1"><img src="../html_test/image/adsrun.png"></div>
+        <div class="item1"><nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form></nav></div>
+        <div class="item1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+          <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg></div>
+        <div class="item1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/></svg></div>
+        <div class="item1"></div> 
+        <div class="item1"></div> 
+
+      <div class="item2">Menu</div> 
+        <div class=item2><nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+            ...
+          </div>
+        </nav></div>
+
+      <div class="item3">Main</div> 
+      <div class="item4">Footer</div> 
+    </div> 
+
+  
+      
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
