@@ -1,0 +1,118 @@
+.myGrid{
+    display:gird;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+  }
+    .container{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    @media (min-width: 700px) {
+      .container {
+        width: 750px;
+      }
+    }
+    .form-control {
+        height: 50px;
+        width: 2000px;
+        font-size: large; font-weight: bold;
+        text-align: left;
+    }
+    .page {
+        text-emphasis-color: blue;
+    }
+    .style {
+        text-emphasis-color: red;
+    }
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+    <!-- Adsrun 부분 -->
+      <div class="logo"><form action="" method=""><img src="../html_test/image/adsrun.png"></form></div>
+      <!-- search 버튼 -->
+      <div class="input-group"> 
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" /></div>
+      <!-- 해 아이콘 부분 -->
+      <div class="icon1"><form action="" method=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+      <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+      </svg></form></div>
+      <!-- 알람 아이콘 부분 -->
+      <div class="icon2"><form action="" method=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+      </svg></form></div>
+      <!-- 메뉴 아이콘 부분 -->
+      <div class="icon3"><form action="" method=""></form></div>
+      <!-- 프로필 아이콘 부분 -->
+      <div class="icon4"><form action="" method=""></form></div>
+    </header>
+
+    <section1> <!-- 왼쪽bar 부분 -->
+    </section1> 
+
+    <section2> <!-- 중앙 입력값 부분 -->
+      <div class="gird-container">
+        <div class="gird-item"><a href=""><p>page 1</p></a></div>
+        <div class="gird-item"><p>></p></div>
+        <div class="gird-item"><a href=""><p>page 2</p></a></div>
+        <div class="gird-item"><p>></p></div>
+        <div class="gird-item"><p>Default</p></div>
+        <div class="gird-item"><strong>Code</strong></div>
+     
+        
+       
+
+        <!-- 선택하세요 -->
+        <div class="myGrid"><select class="form-select" aria-label="Default select example">코드그룹
+          <option selected>선택하세요</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          </select></div>
+        <!-- 코드 -->
+        <div class="myGrid"></div>코드
+        
+
+
+
+
+        <div class="col-xs-1">코드(ANOTHER)</span> 
+        <div class="col-xs-1">코드 이름</span>
+        <div class="col-xs-1">코드 이름 (영문)</div>
+      <div class="row">
+        <div class="col-xs-1">사용여부</div>
+        <div class="col-xs-1"><div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>순서</div>
+      <div class="row">
+        <div class="col-xs-1">설명</div>
+      <div class="row">
+        <div class="col-xs-1">다국어1</div>
+        <div class="col-xs-1">다국어2</div>
+        <div class="col-xs-1">다국어3</div>
+        <div class="col-xs-1">다국어4</div>
+      <div class="row">
+        <div class="col-xs-5">다국어5</div>
+        <div class="col-xs-5">다국어6</div>
+        <div class="col-xs-5">다국어7</div>
+        <div class="col-xs-5">다국어8</div>
+      <div class="row">
+        <div class="col-xs-6">예비1 (VARCHAR TYPE)</div>
+        <div class="col-xs-6">예비2 (VARCHAR TYPE)</div>
+        <div class="col-xs-6">예비3 (VARCHAR TYPE)</div>
+        <div class="col-xs-6">예비4 (VARCHAR TYPE)</div>
+      <div class="row">
+        <div class="col-xs-7">예비1 (INT TYPE)</div>
+        <div class="col-xs-7">예비2 (INT TYPE)</div>
+        <div class="col-xs-7">예비3 (INT TYPE)</div>
+        <div class="col-xs-7">예비4 (INT TYPE)</div>
+      <form>
+        <div class="button1"><form action=""></form><input type="button"><a href=""></a></div>
+        <div class="button2"><form action=""><input type="button"></form><a href=""></a></div>
+      </form>
+    </section2>
+
+    <footer> <!-- 아래 하단 부분 -->
+    </footer>
+
+    </form>
