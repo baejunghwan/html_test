@@ -62,7 +62,7 @@
        
 
         <!-- 선택하세요 -->
-        <div class="myGrid"><select class="form-select" aria-label="Default select example">코드그룹
+        <div class=""><select class="form-select" aria-label="Default select example">코드그룹
           <option selected>선택하세요</option>
           <option value="1">One</option>
           <option value="2">Two</option>
